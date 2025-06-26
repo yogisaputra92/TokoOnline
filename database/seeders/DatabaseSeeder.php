@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
     {
         User::create([
             'nama'     => 'Administrator',
-            'email'    => 'admin@gmail.com',
+            'email'    => 'superadmin@gmail.com',
             'role'     => '1', // SuperAdmin
             'status'   => 1,   // Aktif
             'hp'       => '0812345678901',
@@ -25,8 +25,8 @@ class DatabaseSeeder extends Seeder
         // Untuk record berikutnya silahkan beri nilai berbeda
         // pada: nama, email, hp dengan masing-masing anggota kelompok
         User::create([
-            'nama'     => 'Sopian Aji',
-            'email'    => 'sopian4ji@gmail.com',
+            'nama'     => 'Admin1',
+            'email'    => 'admin1@gmail.com',
             'role'     => '0', // Admin
             'status'   => 1,
             'hp'       => '081234567892',
@@ -34,8 +34,8 @@ class DatabaseSeeder extends Seeder
         ]);
 
         User::create([
-            'nama'     => 'Rousyati',
-            'email'    => 'rousyati@gmail.com',
+            'nama'     => 'Admin2',
+            'email'    => 'admin2@gmail.com',
             'role'     => '0', // Admin
             'status'   => 0,
             'hp'       => '081234564542',
@@ -43,8 +43,8 @@ class DatabaseSeeder extends Seeder
         ]);
 
         User::create([
-            'nama'     => 'Husni Faqih',
-            'email'    => 'husni@gmail.com',
+            'nama'     => 'Admin3',
+            'email'    => 'admin3@gmail.com',
             'role'     => '0', // Admin
             'status'   => 0,
             'hp'       => '089634567892',

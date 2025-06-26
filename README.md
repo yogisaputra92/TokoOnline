@@ -1,13 +1,13 @@
-==========================================================
-        WEB PROGRAMING 2 -TOKO ONLINE - Laravel 10
-==========================================================
+====================================================
+## WEB PROGRAMING 2 -TOKO ONLINE - Laravel 10
+====================================================
 
-Deskripsi:
+## Deskripsi:
 -----------
 Proyek ini merupakan aplikasi Toko Online sederhana berbasis Laravel.
 Fitur utama meliputi manajemen produk, kategori, user (admin dan pengguna), serta sistem login berbasis role.
 
-Struktur Fitur:
+## Struktur Fitur:
 ---------------
 1. Autentikasi pengguna (login/logout)
 2. Role: Admin & User
@@ -22,7 +22,7 @@ Struktur Fitur:
 6. Dashboard statistik
 7. Tampilan backend menggunakan Blade + TailwindCSS
 
-Spesifikasi Teknologi:
+## Spesifikasi Teknologi:
 ----------------------
 - Laravel 10
 - PHP >= 8.1
@@ -32,7 +32,7 @@ Spesifikasi Teknologi:
 - Composer
 - Git
 
-Cara Instalasi:
+## Cara Instalasi:
 ---------------
 1. Clone repository:
    git clone <url_repo>
@@ -47,6 +47,11 @@ Cara Instalasi:
    cp .env.example .env
 
 5. Atur konfigurasi database di file `.env`
+    ```bash
+    DB_DATABASE=db_tokoonline
+    DB_USERNAME=root
+    DB_PASSWORD=
+    ```
 
 6. Generate key:
    php artisan key:generate
@@ -63,13 +68,13 @@ Cara Instalasi:
 10. Akses melalui browser:
     http://127.0.0.1:8000
 
-Akun Login:
+## Akun Login:
 -----------
 - SuperAdmin
   Email   : admin@gmail.com
   Password: Admin123
 
-Catatan Khusus:
+## Catatan Khusus:
 ---------------
 - Gunakan `auth()->user()->role` untuk membatasi akses fitur
 - Semua file upload akan disimpan di direktori `storage/app/public`
@@ -78,7 +83,7 @@ Catatan Khusus:
 - Diperoleh dari modul resmi kampus, lalu dimodifikasi sesuai kebutuhan tugas.
 - Dapat digunakan sebagai referensi belajar Laravel.
 
-Pengembang:
+## Pengembang:
 -----------
 
 (M Yogi Saputra - [Web programing ll] - [Universitas Bina Sarana Informatika])

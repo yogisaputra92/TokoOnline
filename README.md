@@ -35,7 +35,7 @@ Fitur utama meliputi manajemen produk, kategori, user (admin dan pengguna), sert
 ## Cara Instalasi:
 ---------------
 1. Clone repository:
-   git clone <url_repo>
+   git clone <git@github.com:yogisaputra92/TokoOnline.git>
 
 2. Masuk ke direktori project:
    cd TokoOnline
@@ -71,7 +71,7 @@ Fitur utama meliputi manajemen produk, kategori, user (admin dan pengguna), sert
 ## Akun Login:
 -----------
 - SuperAdmin
-  Email   : admin@gmail.com
+  Email   : superadmin@gmail.com
   Password: Admin123
 
 ## Catatan Khusus:

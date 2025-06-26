@@ -35,16 +35,24 @@ Fitur utama meliputi manajemen produk, kategori, user (admin dan pengguna), sert
 ## Cara Instalasi:
 ---------------
 1. Clone repository:
-   git clone <git@github.com:yogisaputra92/TokoOnline.git>
+   ```bash
+   git clone git@github.com:yogisaputra92/TokoOnline.git
+   ```
 
 2. Masuk ke direktori project:
+   ```bash
    cd TokoOnline
+   ```
 
 3. Install dependency PHP:
+   ```bash
    composer install
+   ```
 
 4. Copy file .env:
+   ```bash
    cp .env.example .env
+   ```
 
 5. Atur konfigurasi database di file `.env`
     ```bash
@@ -54,16 +62,27 @@ Fitur utama meliputi manajemen produk, kategori, user (admin dan pengguna), sert
     ```
 
 6. Generate key:
+   ```bash
    php artisan key:generate
+   ```
 
 7. Jalankan migrasi:
+   ```bash
    php artisan migrate
+   ```
 
-8. (Opsional) Seed data awal:
-   php artisan db:seed
+8. Buat folder img-produk & img user
+   ```bash
+   mkdir public/storage/img-produk
+   mkdir public/storage/img-user
+
+   php artisan storage:link
+   ```
 
 9. Jalankan server lokal:
+   ```bash
    php artisan serve
+   ```
 
 10. Akses melalui browser:
     http://127.0.0.1:8000

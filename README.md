@@ -1,6 +1,6 @@
-====================================================
-## WEB PROGRAMING 2 -TOKO ONLINE - Laravel 10
-====================================================
+==============================================================
+   ## WEB PROGRAMING 2 -TOKO ONLINE - Laravel 10
+==============================================================
 
 ## Deskripsi:
 -----------
@@ -60,6 +60,7 @@ Fitur utama meliputi manajemen produk, kategori, user (admin dan pengguna), sert
     DB_USERNAME=root
     DB_PASSWORD=
     ```
+   buat database dengan nama db_tokoonline pada phpmyadmin
 
 6. Generate key:
    ```bash
@@ -68,7 +69,7 @@ Fitur utama meliputi manajemen produk, kategori, user (admin dan pengguna), sert
 
 7. Jalankan migrasi:
    ```bash
-   php artisan migrate
+   php artisan migrate:fresh --seed
    ```
 
 8. Buat folder img-produk & img user
@@ -93,6 +94,10 @@ Fitur utama meliputi manajemen produk, kategori, user (admin dan pengguna), sert
   Email   : superadmin@gmail.com
   Password: Admin123
 
+- Admin
+  Email   : admin1@gmail.com
+  Password: Admin123
+
 ## Catatan Khusus:
 ---------------
 - Gunakan `auth()->user()->role` untuk membatasi akses fitur
@@ -105,6 +110,6 @@ Fitur utama meliputi manajemen produk, kategori, user (admin dan pengguna), sert
 ## Pengembang:
 -----------
 
-(M Yogi Saputra - [Web programing ll] - [Universitas Bina Sarana Informatika])
+(M Yogi Saputra - Web programing ll - Universitas Bina Sarana Informatika)
 
 ==========================================================

@@ -42,21 +42,23 @@
                     </a>
                     <a class="navbar-brand" href="index.html">
                         <b class="logo-icon p-l-10">
-                            <img src="{{ asset('backend/image/icon_univ_bsi.png') }}" alt="homepage" class="light-logo" />
+                            <img src="{{ asset('backend/image/icon_univ_bsi.png') }}" alt="homepage"
+                                class="light-logo" />
                         </b>
                         <span class="logo-text">
                             <img src="{{ asset('backend/image/logo_text.png') }}" alt="homepage" class="light-logo" />
                         </span>
                     </a>
-                    <a class="topbartoggler d-block d-md-none" href="javascript:void(0)"
-                        data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    <a class="topbartoggler d-block d-md-none" href="javascript:void(0)" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation"><i class="ti-more"></i></a>
                 </div>
 
                 <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
                     <ul class="navbar-nav float-left mr-auto">
                         <li class="nav-item d-none d-md-block">
-                            <a class="nav-link sidebartoggler" href="javascript:void(0)" data-sidebartype="mini-sidebar">
+                            <a class="nav-link sidebartoggler" href="javascript:void(0)"
+                                data-sidebartype="mini-sidebar">
                                 <i class="mdi mdi-menu font-24"></i>
                             </a>
                         </li>
@@ -68,16 +70,19 @@
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href=""
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 @if (Auth::user()->foto)
-                                    <img src="{{ asset('storage/img-user/' . Auth::user()->foto) }}" alt="user" class="rounded-circle" width="31">
+                                <img src="{{ asset('storage/img-user/' . Auth::user()->foto) }}" alt="user"
+                                    class="rounded-circle" width="31">
                                 @else
-                                    <img src="{{ asset('storage/img-user/img-default.jpg') }}" alt="user" class="rounded-circle" width="31">
+                                <img src="{{ asset('storage/img-user/img-default.jpg') }}" alt="user"
+                                    class="rounded-circle" width="31">
                                 @endif
                             </a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated">
                                 <a class="dropdown-item" href="{{ route('backend.user.edit', Auth::user()->id) }}">
                                     <i class="ti-user m-r-5 m-l-5"></i> Profil Saya
                                 </a>
-                                <a class="dropdown-item" href="" onclick="event.preventDefault(); document.getElementById('keluar-app').submit();">
+                                <a class="dropdown-item" href=""
+                                    onclick="event.preventDefault(); document.getElementById('keluar-app').submit();">
                                     <i class="fa fa-power-off m-r-5 m-l-5"></i> Keluar
                                 </a>
                                 <div class="dropdown-divider"></div>
@@ -121,6 +126,17 @@
                                 </li>
                             </ul>
                         </li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark"
+                                href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span
+                                    class="hide-menu">Laporan </span></a>
+                            <ul aria-expanded="false" class="collapse first-level">
+                                <li class="sidebar-item"><a href="{{ route('backend.laporan.formuser') }}"
+                                        class="sidebar-link"><i class="mdi mdi-chevron-right"></i><span
+                                            class="hide-menu"> User </span></a></li>
+                                <li class="sidebar-item"><a href="{{ route('backend.laporan.formproduk') }}" class="sidebar-link"><i
+                                            class="mdi mdi-chevron-right"></i><span class="hide-menu"> Produk
+                                        </span></a></li>
+                            </ul>
                     </ul>
                 </nav>
             </div>
@@ -160,60 +176,69 @@
 
     <!-- DataTables Init -->
     <script>
-        $('#zero_config').DataTable();
+    $('#zero_config').DataTable();
     </script>
 
     <!-- SweetAlert Konfirmasi Hapus -->
     <script>
-        $('.show_confirm').click(function(event) {
-            var form = $(this).closest("form");
-            var konfdelete = $(this).data("konf-delete");
-            event.preventDefault();
-            Swal.fire({
-                title: 'Konfirmasi Hapus Data?',
-                html: "Data yang dihapus <strong>" + konfdelete + "</strong> tidak dapat dikembalikan!",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Ya, dihapus',
-                cancelButtonText: 'Batal'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    Swal.fire('Terhapus!', 'Data berhasil dihapus.', 'success')
-                        .then(() => {
-                            form.submit();
-                        });
-                }
-            });
+    $('.show_confirm').click(function(event) {
+        var form = $(this).closest("form");
+        var konfdelete = $(this).data("konf-delete");
+        event.preventDefault();
+        Swal.fire({
+            title: 'Konfirmasi Hapus Data?',
+            html: "Data yang dihapus <strong>" + konfdelete + "</strong> tidak dapat dikembalikan!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya, dihapus',
+            cancelButtonText: 'Batal'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire('Terhapus!', 'Data berhasil dihapus.', 'success')
+                    .then(() => {
+                        form.submit();
+                    });
+            }
         });
+    });
     </script>
 
     <script>
-        //previewFoto
-        function previewFoto() {
-            const foto = document.querySelector('input[name="foto"]');
-            const fotoPreview = document.querySelector('.foto-preview');
-            fotoPreview.style.display = 'block';
-            const fotoReader = new FileReader();
-            fotoReader.readAsDataURL(foto.files[0]);
-            fotoReader.onload = function (fotoEvent) {
-                fotoPreview.src = fotoEvent.target.result;
-                fotoPreview.style.width = "100%";
-            }
+    //previewFoto
+    function previewFoto() {
+        const foto = document.querySelector('input[name="foto"]');
+        const fotoPreview = document.querySelector('.foto-preview');
+        fotoPreview.style.display = 'block';
+        const fotoReader = new FileReader();
+        fotoReader.readAsDataURL(foto.files[0]);
+        fotoReader.onload = function(fotoEvent) {
+            fotoPreview.src = fotoEvent.target.result;
+            fotoPreview.style.width = "100%";
         }
+    }
     </script>
 
     <!-- SweetAlert Sukses -->
     @if (session('success'))
-        <script>
-            Swal.fire({
-                icon: 'success',
-                title: 'Berhasil!',
-                text: "{{ session('success') }}"
-            });
-        </script>
+    <script>
+    Swal.fire({
+        icon: 'success',
+        title: 'Berhasil!',
+        text: "{{ session('success') }}"
+    });
+    </script>
     @endif
+
+    <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+    <script>
+    ClassicEditor
+        .create(document.querySelector('#ckeditor'))
+        .catch(error => {
+            console.error(error);
+        })
+    </script>
 
 </body>
 

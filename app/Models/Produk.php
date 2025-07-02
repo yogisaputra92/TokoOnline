@@ -21,4 +21,12 @@ class Produk extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function fotoProduk()
+    {
+        return $this->hasMany(FotoProduk::class);
+    }
+    
+ 
+
 }

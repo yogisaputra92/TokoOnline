@@ -46,6 +46,10 @@
                                         <button type="button" class="btn btn-cyan btn-sm"><i class="far fa-edit"></i>
                                             Ubah</button>
                                     </a>
+                                    <a href="{{ route('backend.produk.show', $row->id) }}" title="Ubah Data">
+                                        <button type="button" class="btn btn-warning btn-sm"><i class="fas fa-plus"></i>
+                                            Gambar
+                                        </button>
                                     <form method="POST" action="{{ route('backend.produk.destroy', $row->id) }}"
                                         style="display: inline-block;">
                                         @method('delete')
@@ -54,6 +58,7 @@
                                             data-konf-delete="{{ $row->nama }}" title='Hapus Data'>
                                             <i class="fas fa-trash"></i> Hapus</button>
                                     </form>
+                                    </a>
                                 </td>
                             </tr>
                             @endforeach

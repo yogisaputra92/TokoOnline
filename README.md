@@ -90,22 +90,23 @@ Fitur utama meliputi manajemen produk, kategori, user (admin dan pengguna), sert
 
 
 ## Tampilan screenshots
+---
 
-https://github.com/yogisaputra92/TokoOnline/blob/main/public/screenshots/Screenshot%20from%202025-07-02%2017-20-07.png
+![tampilan login](https://github.com/yogisaputra92/TokoOnline/blob/main/public/screenshots/Screenshot%20from%202025-07-02%2017-20-07.png )
 
-https://github.com/yogisaputra92/TokoOnline/blob/main/public/screenshots/Screenshot%20from%202025-07-02%2017-20-15.png
+![tampilan beranda](https://github.com/yogisaputra92/TokoOnline/blob/main/public/screenshots/Screenshot%20from%202025-07-02%2017-20-15.png)
 
-https://github.com/yogisaputra92/TokoOnline/blob/main/public/screenshots/Screenshot%20from%202025-07-02%2017-20-23.png
+![tampilan user](https://github.com/yogisaputra92/TokoOnline/blob/main/public/screenshots/Screenshot%20from%202025-07-02%2017-20-23.png)
 
-https://github.com/yogisaputra92/TokoOnline/blob/main/public/screenshots/Screenshot%20from%202025-07-02%2017-20-31.png
+![tampilan kategori](https://github.com/yogisaputra92/TokoOnline/blob/main/public/screenshots/Screenshot%20from%202025-07-02%2017-20-31.png)
 
-https://github.com/yogisaputra92/TokoOnline/blob/main/public/screenshots/Screenshot%20from%202025-07-02%2017-20-37.png
+![tampilan produk](https://github.com/yogisaputra92/TokoOnline/blob/main/public/screenshots/Screenshot%20from%202025-07-02%2017-20-37.png)
 
-https://github.com/yogisaputra92/TokoOnline/blob/main/public/screenshots/Screenshot%20from%202025-07-02%2017-20-46.png
+![tampilan ubah produk](https://github.com/yogisaputra92/TokoOnline/blob/main/public/screenshots/Screenshot%20from%202025-07-02%2017-21-33.png)
 
-https://github.com/yogisaputra92/TokoOnline/blob/main/public/screenshots/Screenshot%20from%202025-07-02%2017-21-33.png
+![tampilan laporan](https://github.com/yogisaputra92/TokoOnline/blob/main/public/screenshots/Screenshot%20from%202025-07-02%2017-20-46.png)
 
-
+---
 
 ## Akun Login:
 -----------

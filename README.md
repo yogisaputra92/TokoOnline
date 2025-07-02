@@ -88,6 +88,25 @@ Fitur utama meliputi manajemen produk, kategori, user (admin dan pengguna), sert
 10. Akses melalui browser:
     http://127.0.0.1:8000
 
+
+## Tampilan screenshots
+
+https://github.com/yogisaputra92/TokoOnline/blob/main/public/screenshots/Screenshot%20from%202025-07-02%2017-20-07.png
+
+https://github.com/yogisaputra92/TokoOnline/blob/main/public/screenshots/Screenshot%20from%202025-07-02%2017-20-15.png
+
+https://github.com/yogisaputra92/TokoOnline/blob/main/public/screenshots/Screenshot%20from%202025-07-02%2017-20-23.png
+
+https://github.com/yogisaputra92/TokoOnline/blob/main/public/screenshots/Screenshot%20from%202025-07-02%2017-20-31.png
+
+https://github.com/yogisaputra92/TokoOnline/blob/main/public/screenshots/Screenshot%20from%202025-07-02%2017-20-37.png
+
+https://github.com/yogisaputra92/TokoOnline/blob/main/public/screenshots/Screenshot%20from%202025-07-02%2017-20-46.png
+
+https://github.com/yogisaputra92/TokoOnline/blob/main/public/screenshots/Screenshot%20from%202025-07-02%2017-21-33.png
+
+
+
 ## Akun Login:
 -----------
 - SuperAdmin
